@@ -10,7 +10,7 @@
 | ---- | ---- |
 | Linux / Ubuntu| 20.04 |
 | Rust | 1.63.0 |
-
+| Ruby | 2.4.1 |
 
 
 # 環境構築
@@ -52,6 +52,13 @@ gem install rubinius-melbourne -v '3.9'
 rbenv install --list
 
 # 最新のバージョンをインストール
+# 「rbx」とか「ree」とかではない数字だけのバージョンね♪
 rbenv install <バージョン>
+
+# インストールが成功しているか確認
+rbenv versions
+
+# インストールしたバージョンに変更
+rbenv global <バージョン>
 ```
 
