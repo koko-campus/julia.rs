@@ -8,8 +8,8 @@ use image::ColorType;
 use image::png::PNGEncoder;
 
 
-fn escape_time(c: Complex<f64>, limit: u32) -> Option<u32> {
-    let mut z = Complex{re: 0.0, im: 0.0};
+fn escape_time(mut z: Complex<f64>, limit: u32) -> Option<u32> {
+    let c = Complex{re: -0.3, im: -0.63};
     for i in 0..limit {
         z = z * z + c;
         if 4.0 < z.norm_sqr() {
