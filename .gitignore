@@ -1,5 +1,6 @@
 /seeds/
 /nohup.out
+/.env
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,rust,visualstudiocode,ruby
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,rust,visualstudiocode,ruby
