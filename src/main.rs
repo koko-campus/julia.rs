@@ -2,7 +2,6 @@ extern crate image;
 
 use std::fs::File;
 use std::fs;
-use std::io::Write;
 use std::env;
 use dotenv::dotenv;
 use num::Complex;
