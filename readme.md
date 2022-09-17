@@ -62,3 +62,35 @@ rbenv versions
 rbenv global <バージョン>
 ```
 
+
+## ffmpeg インストール
+
+複数の画像ファイルからひとつの動画ファイルを生成するためのコマンドです。  
+
+```bash
+sudo apt install ffmpeg
+```
+
+
+# 実行方法
+
+
+```bash
+# コンパイルして、、、
+cargo build --release
+
+# 実行!!!
+./target/release/julia_rs
+
+# バックグラウンド実行、かつログイン後も実行したい場合には
+nohup ./target/release/julia_rs &
+```
+
+
+# 動画ファイルの作成
+
+
+```bash
+ffmpeg -r 30 -i seeds/★★★/%08d.png -vcodec libx264 -pix_fmt yuv420p -r 60 ./fruits/★★★.mp4
+```
+
