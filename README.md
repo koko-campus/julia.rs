@@ -3,8 +3,7 @@
 次世代システムプログラミング言語、Rustでジュリア集合を描写します。  
 フラクタル図形といえば、「マンデルブロ集合♪」みていな認識もありますが、ジュリア集合もとってもキレイですよ～♪
 
-
-# 環境情報
+## 環境情報
 
 | 機能 | バージョン |
 | ---- | ---- |
@@ -12,9 +11,7 @@
 | Rust | 1.63.0 |
 | Ruby | 2.4.1 |
 
-
-# 環境構築
-
+## 環境構築
 
 ```bash
 # イロイロ最新に
@@ -38,31 +35,6 @@ rustdoc --version
 # -> rustdoc 1.63.0
 ```
 
-## Ruby インストール
-
-```bash
-sudo apt install rbenv
-rbenv init
-eval "$(rbenv init -)"
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-doctor | bash
-
-gem install rubinius-melbourne -v '3.9'
-
-# インストール可能なRuby一覧を取得して
-rbenv install --list
-
-# 最新のバージョンをインストール
-# 「rbx」とか「ree」とかではない数字だけのバージョンね♪
-rbenv install <バージョン>
-
-# インストールが成功しているか確認
-rbenv versions
-
-# インストールしたバージョンに変更
-rbenv global <バージョン>
-```
-
-
 ## ffmpeg インストール
 
 複数の画像ファイルからひとつの動画ファイルを生成するためのコマンドです。  
@@ -71,11 +43,12 @@ rbenv global <バージョン>
 sudo apt install ffmpeg
 ```
 
-
-# 実行方法
-
+## 実行方法
 
 ```bash
+# デバグ実行
+cargo run
+
 # コンパイルして、、、
 cargo build --release
 
@@ -86,11 +59,8 @@ cargo build --release
 nohup ./target/release/julia_rs &
 ```
 
-
-# 動画ファイルの作成
-
+## 動画ファイルの作成
 
 ```bash
 ffmpeg -r 30 -i seeds/★★★/%08d.png -vcodec libx264 -pix_fmt yuv420p -r 60 ./fruits/★★★.mp4
 ```
-
