@@ -48,6 +48,7 @@ sudo apt install ffmpeg
 ## 実行方法
 
 .envファイルを作成。  
+テンプレートは`./seeds`ディレクトリ内にあります。  
 
 ```.env
 TARGET_DIRECTORY=☆出力先ディレクトリ☆
