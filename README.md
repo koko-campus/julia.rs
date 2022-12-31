@@ -47,6 +47,27 @@ sudo apt install ffmpeg
 
 ## 実行方法
 
+.envファイルを作成。  
+
+```.env
+TARGET_DIRECTORY=☆出力先ディレクトリ☆
+
+START=☆何枚目から☆
+UPTO=☆何枚目まで☆
+# 途中でフリーズした時用
+
+ASPECT_RATIO=☆縦横比☆
+SHRINK_RATIO = ☆縮小比率☆
+FILESIZE_HEIGHT=☆画像ファイルの高さ☆
+
+START_X = ☆実軸の開始座標☆
+START_Y = ☆虚軸の開始座標☆
+DEFAULT_WIDTH = ☆デフォルトの横幅☆
+DEFAULT_HEIGHT = ☆デフォルトの高さ☆
+C_REAL=☆C点のX座標☆
+C_IMAG=☆C点のY座標☆
+```
+
 ```bash
 # デバグ実行
 cargo run
