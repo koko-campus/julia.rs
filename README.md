@@ -1,7 +1,9 @@
 # 「Rust」 × 「ジュリア集合」
 
 次世代システムプログラミング言語、Rustでジュリア集合を描写します。  
-フラクタル図形といえば、「マンデルブロ集合♪」みていな認識もありますが、ジュリア集合もとってもキレイですよ～♪
+フラクタル図形といえば、「マンデルブロ集合♪」みていな認識もありますが、ジュリア集合もとってもキレイですよ～♪  
+
+![成果物](./fruits/a.png)  
 
 ## 環境情報
 
@@ -64,3 +66,7 @@ nohup ./target/release/julia_rs &
 ```bash
 ffmpeg -r 30 -i seeds/★★★/%08d.png -vcodec libx264 -pix_fmt yuv420p -r 60 ./fruits/★★★.mp4
 ```
+
+## その他
+
+- [YouTube](https://youtu.be/ObCuSCKdFTE)
